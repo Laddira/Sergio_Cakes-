@@ -1,0 +1,169 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+/* Layout geral */
+.geral {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    width: 30%;
+}
+
+/* Menu */
+.menu {
+    width: 60%;
+    padding: 16px;
+}
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.menu ul li {
+    margin: 0 10px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 16px;
+}
+.menu ul li a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* Limpar flutuações antigas */
+.clearfix {
+    clear: both;
+}
+
+/* Menu secundário */
+.menu2 {
+    display: inline-block;
+    padding: 4%;
+    width: 80%;
+}
+
+/* Listas */
+.lista {
+    margin-bottom: 2%;
+}
+
+/* Títulos */
+.titulo, h1 {
+    text-align: center;
+    margin: 2% 0;
+    color: gold;
+    font-weight: bold;
+}
+
+/* Secções principais */
+.esquerda, .direita {
+    width: 45%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.esquerda {
+    float: left;
+}
+
+.direita {
+    float: right;
+}
+
+/* Parágrafos */
+p {
+    text-align: justify;
+    width: 95%;
+    margin: 2% auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 2%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: gold;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Secções */
+section {
+    border: 2px solid white;
+    width: 100%;
+    padding: 2%;
+    height: auto;
+}
+
+/* Botões */
+.inscrever {
+    background-color: gold;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px 20px;
+    margin: 5% 0 0 4%;
+    display: inline-block;
+    text-align: center;
+}
+
+.last {
+    position: relative;
+    left: 2%;
+}
+
+/* Links e botões */
+button, a {
+    color: #000000;
+}
+a {
+    font-size: 15px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .geral {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, .menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
+
+    .esquerda, .direita {
+        float: none;
+        width: 90%;
+        margin: 0 auto 5%;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+    }
+}
